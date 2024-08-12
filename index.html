@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>encriptador</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        Eng De Software Valmir Goncalves
+    </header>
+
+    <main>
+        <section id="home" class="section-container">
+            <img class="logo alura" src="img/al.png" alt="logo da alura">
+            <h1 class="encriptador">encriptador</h1>
+            <img class="bone" src="img/bc.png" alt="boneco com lupa">
+           
+            <div class="painel">
+                
+                <label for="inputText">Texto de Entrada:</label>
+                <textarea id="inputText" placeholder="Digite o texto aqui..."></textarea>
+                <div class="botoes">
+                    <button onclick="criptografar()">Criptografar</button>
+                    <button onclick="descriptografar()">Descriptografar</button>
+                    <button onclick="limpar()">Limpar</button>
+                </div>
+                <label for="inputText" class="int">Texto de Saída:</label>
+                <textarea id="outputText" placeholder="Resultado..." readonly></textarea>
+            </div>
+               
+        </section>
+        <div class="info hidden">
+                
+            <input type="range" id="deslocamento" min="1" max="25" value="3" oninput="atualizarDeslocamento()">
+            <span id="valorDeslocamento">3</span>
+        </div>
+        
+    </main>
+
+    <footer>
+        <p>Valmir Goncalves</p>
+        <p class="ds">Eng De Software</p>
+    </footer>
+
+    <script src="app.js"></script>
+    <script>
+        function scrollToContact() {
+            const section = document.getElementById('contact');
+            window.scrollTo({
+                top: section.offsetTop,
+                behavior: 'smooth'
+            });
+        }
+    </script>
+</body>
+</html>
